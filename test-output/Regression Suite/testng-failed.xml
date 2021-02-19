@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
+  <parameter name="value" value="${Environment}"/>
+  <test name="widget(failed)">
+    <classes>
+      <class name="com.tekarch.widget.widget">
+        <methods>
+          <include name="settingUpEnvironment"/>
+          <include name="ShuttingDownAllDependencies"/>
+          <include name="To_check_whether_ACCORDIAN_is_Working_Fine_Or_Not"/>
+          <include name="settingReqURL"/>
+          <include name="TriggerDependencies"/>
+        </methods>
+      </class> <!-- com.tekarch.widget.widget -->
+      <class name="com.tekarch.login.loginTekApp">
+        <methods>
+          <include name="settingUpEnvironment"/>
+          <include name="settingReqURL"/>
+        </methods>
+      </class> <!-- com.tekarch.login.loginTekApp -->
+    </classes>
+  </test> <!-- widget(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->
